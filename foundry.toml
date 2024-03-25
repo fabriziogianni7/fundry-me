@@ -1,6 +1,11 @@
 [profile.default]
 src = "src"
+script = 'script'
 out = "out"
 libs = ["lib"]
+remappings = ["@chainlink/contracts/src/v0.8/shared/interfaces/=./lib/foundry-chainlink-toolkit/src/interfaces/feeds/"]
+fs_permissions = [{ access = "read", path = "./broadcast" }]
+
+# foundry-f23/fund-me/lib/foundry-chainlink-toolkit/src/interfaces/feeds/AggregatorV3Interface.sol
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
